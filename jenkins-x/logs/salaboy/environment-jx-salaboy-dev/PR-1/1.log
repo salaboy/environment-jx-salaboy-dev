@@ -1,0 +1,50 @@
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-nm2td-1[0m stage [32mpr-checks[0m and container [32mcredential-initializer[0m
+{"level":"info","ts":1595329438.7117422,"caller":"creds-init/main.go:44","msg":"Credentials initialized."}
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-nm2td-1[0m stage [32mpr-checks[0m and container [32mworking-dir-initializer[0m
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-nm2td-1[0m stage [32mpr-checks[0m and container [32mplace-tools[0m
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-nm2td-1[0m stage [32mpr-checks[0m and container [32mstep-git-source-salaboy-environment-jx-salaboy-nm2td-m2tk2[0m
+{"level":"info","ts":1595329466.3218465,"caller":"git/git.go:105","msg":"Successfully cloned https://github.com/*******/environment-**-*******-dev.git @ master in path /workspace/source"}
+{"level":"warn","ts":1595329466.3220508,"caller":"git/git.go:152","msg":"Unexpected error: creating symlink: symlink /tekton/home/.ssh /root/.ssh: file exists"}
+{"level":"info","ts":1595329466.3660738,"caller":"git/git.go:133","msg":"Successfully initialized and updated submodules in path /workspace/source"}
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-nm2td-1[0m stage [32mpr-checks[0m and container [32mstep-setup-builder-home[0m
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-nm2td-1[0m stage [32mpr-checks[0m and container [32mstep-git-merge[0m
+Using SHAs from PULL_REFS=master:817831284993640da01f7efdeab2714ba0db1f16,1:2af90bf316191f30c87d9ceebd1d23e6eafad30b
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git fetch origin --unshallow 2af90bf316191f30c87d9ceebd1d23e6eafad30b: 817831284993640da01f7efdeab2714ba0db1f16:
+DEBUG: ran git fetch --unshallow origin 2af90bf316191f30c87d9ceebd1d23e6eafad30b: 817831284993640da01f7efdeab2714ba0db1f16: in 
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git branch
+DEBUG: JX_LOG_LEVEL=error LC_ALL=C git checkout master
+DEBUG: ran git checkout master in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git reset --hard 817831284993640da01f7efdeab2714ba0db1f16
+DEBUG: ran git reset --hard 817831284993640da01f7efdeab2714ba0db1f16 in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git clean -fd .
+DEBUG: ran clean --force -d . in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git merge 2af90bf316191f30c87d9ceebd1d23e6eafad30b
+DEBUG: ran git merge 2af90bf316191f30c87d9ceebd1d23e6eafad30b in 
+DEBUG: LC_ALL=C JX_LOG_LEVEL=error git log --format=%H%x1f%an%x1f%ae%x1f%cn%x1f%ce%x1f%s%n%b%x1e 817831284993640da01f7efdeab2714ba0db1f16..HEAD
+Merged SHA 2af90bf316191f30c87d9ceebd1d23e6eafad30b with commit message 'chore(deps): bump https://github.com/*******/online-store.git' into base branch master
+
+Showing logs for build [32msalaboy-environment-jx-salaboy-nm2td-1[0m stage [32mpr-checks[0m and container [32mstep-verify-parameters[0m
+error: resolve the secrets URIs: replacing secrets URIs: replacing vault paths in *****User:
+  password: local:**-*******/*****User:password
+  username: *****
+docker:
+  email: *******@gmail.com
+  password: local:**-*******/docker:password
+  url: https://index.docker.io/v1/
+  username: *******
+enableDocker: true
+pipelineUser:
+  email: *******@gmail.com
+  token: local:**-*******/pipelineUser:token
+  username: *******
+prow:
+  hmacToken: local:**-*******/prow:hmacToken
+: unable to find "password" in secret at "**-*******/*****User"
+[31m
+Pipeline failed on stage 'pr-checks' : container 'step-verify-parameters'. The execution of the pipeline has stopped.[0m
