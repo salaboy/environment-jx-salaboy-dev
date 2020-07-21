@@ -1,0 +1,15 @@
+adminUser:
+  password: local:jx-salaboy/adminUser:password
+  username: admin
+docker:
+  email: salaboy@gmail.com
+  password: local:jx-salaboy/docker:password
+  url: https://index.docker.io/v1/
+  username: salaboy
+enableDocker: true
+pipelineUser:
+  email: salaboy@gmail.com
+  token: local:jx-salaboy/pipelineUser:token
+  username: salaboy
+prow:
+  hmacToken: local:jx-salaboy/prow:hmacToken
