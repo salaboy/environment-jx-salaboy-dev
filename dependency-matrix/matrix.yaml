@@ -1,0 +1,7 @@
+dependencies:
+- host: github.com
+  owner: salaboy
+  repo: online-store
+  url: https://github.com/salaboy/online-store.git
+  version: ""
+  versionURL: ""
