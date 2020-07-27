@@ -2,4 +2,4 @@
 
 Dependency | Sources | Version | Mismatched versions
 ---------- | ------- | ------- | -------------------
-[salaboy/online-store](https://github.com/salaboy/online-store.git) |  | []() | 
+[salaboy/products-service](https://github.com/salaboy/products-service.git) |  | []() | 
