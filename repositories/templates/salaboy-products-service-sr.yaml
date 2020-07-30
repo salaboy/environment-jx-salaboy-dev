@@ -1,0 +1,21 @@
+apiVersion: jenkins.io/v1
+kind: SourceRepository
+metadata:
+  creationTimestamp: null
+  labels:
+    owner: salaboy
+    provider: github
+    repository: products-service
+  name: salaboy-products-service
+spec:
+  description: Imported application for salaboy/products-service
+  httpCloneURL: https://github.com/salaboy/products-service.git
+  org: salaboy
+  provider: https://github.com
+  providerKind: github
+  providerName: github
+  repo: products-service
+  scheduler:
+    kind: ""
+    name: ""
+  url: https://github.com/salaboy/products-service.git
