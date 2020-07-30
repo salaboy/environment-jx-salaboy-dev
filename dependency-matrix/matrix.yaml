@@ -1,7 +1,7 @@
 dependencies:
 - host: github.com
   owner: salaboy
-  repo: products-service
-  url: https://github.com/salaboy/products-service.git
+  repo: customers-service
+  url: https://github.com/salaboy/customers-service.git
   version: ""
   versionURL: ""
